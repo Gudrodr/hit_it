@@ -136,8 +136,8 @@ struct ContentView: View {
         return Alert(
           title: Text(alertTitle()),
           message: Text(
-            "The slider's value is \(sliderValueRounded()). \n" +
-            "You scored \(currentRoundPoints()) points this round."
+            "Значение бегунка на слайдере \(sliderValueRounded()). \n" +
+            "Количество заработанных очков за раунд \(currentRoundPoints())."
           ),
           dismissButton: .default(Text("Ok")) {
             self.toNextRound()
